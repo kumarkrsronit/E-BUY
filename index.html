@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E buy </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Piedra&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>                                              <!-- top ko show kar rhe -->             
+            <div class="logo">
+                <h1>E-BUY</h1>
+            </div>
+            <ul>
+                <li>
+                    <a id="home" onclick="home()">Home</a>
+                    <a id="shop" onclick="shop()">Shops</a>
+                    <a id="blog" onclick="blog()">Blog</a>
+                    <a id="about" onclick=" about()">About</a>
+                    <a id="contact" onclick="contact()">Contact</a>
+                    <i onclick="addItem()" class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <br><br><br>
+
+        <div class="mainPage">
+            <div class="text">                                <!-- showing the top of home with that girl pic -->
+                <h2>E-BUY...</h2>
+                <h1 class="heads">Super Value Deals</h1>
+                <h1>On All Products</h1>
+                <p>Visit our store and buy all type of clothes and accessories </p>
+                <button>Explore</button>
+            </div>
+            <img src="./touse1.png" alt="" height="600">
+            
+        </div>
+
+
+
+        <div class="cardMen">                      <!-- man wear ke liye 3 card bnaye and unme img and detail dala -->
+            <div class="head">
+                <h1> E-BUY <span>Men's Wear</span></h1>
+            </div>
+            <div class="card" id="item1">
+                <div class="crd">
+                    <img src="./manshirts.png" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Cotton Shirt's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button onclick="add(item1)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="./manjeans.png" alt="" height="320" onclick="showCard(this)">
+                    
+                    <div class="txt">
+                        <h3>Jeans Collection</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="./manshoes.jpeg" alt="" onclick="showCard(this)">
+                    <br><br><br><br>
+                    <div class="txt">
+                        <h3>Trendy Shoes</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cardgirl">                    <!-- for girls -->
+            <div class="head">
+                <h1>E-BUY <span>Women's Wear</span></h1>
+            </div>
+
+            <div class="card">
+                <div class="crd">
+                    <img src="./womantops (2).png" alt="" height="330" onclick="showCard(this) ">
+                    
+                    <div class="txt">
+                        <h3>Trending Girl Tops</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="./jeans.png" alt="" onclick="showCard(this) ">
+                    <br><br><br>
+                    <div class="txt">
+                        <h3>Girl's Fanshy Jeans</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="./womanfootwears.png" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Girl's Foot wears</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Full cart  -->
+        <div class="fullPage">
+            <img id="cartImg" src=" " alt="">
+            <div class="cartText">
+                <h1>E-BUY's BUMPER OFFER <br> Trending Shop </h1>
+                <h2>Special Price</h2>
+                <h2>$11</h2>
+                
+                <p>All sizes available .</p>
+                <p>1$ extra for cash on delievery orders.</p>
+                <div class="btn">
+                    <button>Buy Now</button>
+                    <button onclick="addToCart()">Add To Cart</button>
+
+                </div>
+                <div class="btns">
+                    <button class="relode" onclick="location.reload()">Back </button>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <!-- add to cart -->
+        <div class="addCart">
+
+        </div>
+
+        <div class="blogContent">              <!-- blogs wala section -->
+            <div class="head">
+                <h1>E-BUY Top <span>Blog's</span></h1>
+            </div>
+
+            <div class="trd">
+                <div class="trending">
+                    <img src="./female fashion.png" alt="">
+                    <div class="txt">
+                        <h3>Trending Girl Cloths</h3><br>
+                        <p>Want to connect with our blog where we talk about trending girl fashion ?</p><br>
+                        <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read More</a>
+                    </div>
+                </div>
+                <div class="trending">
+                    <img src="./2man.png" alt="">
+                    <div class="txt">
+                        <h3>Trending Boys Cloths</h3> <br>
+                        <p>Want to connect with our blog where we talk about trending boy fashion ?</p><br>
+                        <a href="https://www.apetogentleman.com/">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="aboutText">
+                <h1>#Know Us...</h1>
+                <p>Our goal is to provide all types of fashion items to all types of public..</p>
+            </div>
+
+            <div class="aboutus">
+                <img src="lap.png" alt="">
+                <div class="dumiText">
+                    <h1>Who we are ?</h1>
+                    <p> We started in july 2023. We sell all types of clothes and fashion items be its anime cosplays , rare shoes 
+                        fancy shirts to formal shirts. You will find everything to us  </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div class="contact">
+            <div class="contactBanner">
+                <h1>#Let's Connect</h1>
+                <p>For any queries contract us we will reply you shortly</p>
+
+            </div>
+            <div class="connect">
+                <div class="connectText">
+                    <h1>Visit Our Office or Contact <br> Us Today</h1>
+                    <p>Address : S 255 Greater Kailash 2 New Delhi 110048</p>
+                    <p>Contact : roizlive69@gmail.com</p>
+                    <p>Number : +918287999852</p>
+                </div>
+                <img src="map.PNG" alt="">
+            </div>
+
+            <div class="form">
+                <h1>Connect with Us. Fill Form</h1>
+                <input type="text" placeholder="Enter Your FirstName"> <br>
+                <input type="text" placeholder="Enter Your LsstName"> <br>
+                <input type="text" placeholder="Enter Your Email"><br>
+                <input type="text" placeholder="Enter Your Number"><br>
+                <input type="text" placeholder="Enter Your Address"><br>
+                <button>Submit</button>
+
+            </div>
+        </div>
+
+        <div class="letter">
+            <div class="sign">
+                <h2>Sign Up for NewsLetter</h2>
+                <p>Don't miss any updates !!</p>
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Enter Email Address">
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="Ftext">
+                <h1>Trends</h1>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>About US</h3>
+                <p>Adrress : S-255 ,<br> Greater Kailash 2  <br> Delhi, 110048
+                </p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>Contact</h3>
+                <p>8287999852</p>
+                <p>roizlive69@gmail.com</p>
+                <p>Comming up..</p>
+                <p>New Arrival</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>Trending</h3>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>SHops</p>
+                <p></p>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
